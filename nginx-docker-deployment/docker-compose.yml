@@ -38,8 +38,8 @@ services:
     depends_on:
       - db
   react-app:
-    image: test-react-app
+    image: test-react-app:node
     ports:
-      - '4567:4567'
+      - '4567:5000'
 volumes:
   postgres-data:
