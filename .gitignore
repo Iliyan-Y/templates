@@ -67,3 +67,6 @@ test-apps/react-typescript-router/test_api/.byebug_history
 # Ignore master key for decrypting credentials and more.
 test-apps/react-typescript-router/test_api/config/master.key
 test-apps/react-typescript-router/test_api/.gitignore
+
+rack-proxy/.env
+rack-proxy/docker-compose.yml

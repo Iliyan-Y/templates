@@ -1,0 +1,4 @@
+FROM ruby:2.7.2-alpine3.13
+
+RUN gem install rack && gem install rack-proxy
+
