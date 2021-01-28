@@ -38,8 +38,11 @@ services:
     depends_on:
       - db
   react-app:
-    image: test-react-app:node
+    image: test-react-app:latest
     ports:
       - '4567:5000'
+    volumes:
+      - ../test-apps/react-typescript-router/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ../test-apps/react-typescript-router/build:/usr/share/nginx/html
 volumes:
   postgres-data:
