@@ -1,4 +1,8 @@
 FROM ruby:2.7.2-alpine3.13
-
+WORKDIR /proxy
 RUN gem install rack && gem install rack-proxy
+
+COPY config.ru proxy_server.rb ./
+
+CMD [ "rackup" ]
 
